@@ -1,0 +1,14 @@
+<title>Products</title>
+
+<h1>Products</h1><br>
+
+<body>
+{% for product in products %}
+    <img src="{{ product.photo.url }}"/><br>
+    Category:{{ product.category }}<br>
+    Model:{{ product.model }}<br>
+    Price:{{ product.price }}<br>
+    Make:{{ product.make }}<br>
+    Body:{{ product.body }}<hr/>
+{% endfor %}
+</body>
